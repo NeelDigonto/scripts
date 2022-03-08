@@ -19,10 +19,3 @@ sudo curl -o digonto.in.config https://raw.githubusercontent.com/fanthomless/scr
 sudo nginx -s reload
 # sudo service nginx restart
 
-
-#setup certbot
-sudo apt install -y certbot python3-certbot-nginx
-sudo certbot --nginx -d digonto.in -d www.digonto.in
-#sudo systemctl status certbot.timer
-#sudo certbot renew --dry-run
-
