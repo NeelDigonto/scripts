@@ -24,11 +24,11 @@ cd $WORK_DIRECTORY
 
 
 sudo rm -rf /etc/nginx/sites-enabled/* # doesnt remove .dirs, use find or a regex to do that if required
-#touch /etc/nginx/config.d/digonto.in.conf
-cd /etx/nginx/config.d/
-sudo curl -o digonto.in.config https://raw.githubusercontent.com/fanthomless/scripts/digonto.in.config
+sudo rm -rf /etc/nginx/conf.d/* # doesnt remove .dirs, use find or a regex to do that if required
+cd /etc/nginx/conf.d/
+sudo curl -o digonto.in.config https://raw.githubusercontent.com/fanthomless/scripts/main/nginx.config
 sudo nginx -s reload
-# sudo service nginx restart
+#sudo service nginx restart
 
 # https://raw.githubusercontent.com/fanthomless/scripts/main/nginx-setup.sh
 # chmod u=rx nginx-setup.sh

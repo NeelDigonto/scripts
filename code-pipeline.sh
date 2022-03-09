@@ -12,3 +12,4 @@ yarn run build
 #pm2
 pm2 --name "digonto.in" start yarn -- start
 
+#set -p 8080 in package.json
