@@ -4,5 +4,5 @@ sudo curl -o nodejs-setup.sh https://raw.githubusercontent.com/fanthomless/scrip
 sudo chmod u=rx nginx-setup.sh
 sudo chmod u=rx nodjes-setup.sh
 
-./nginx-setup.sh
-./nodejs-setup.sh
+sudo ./nginx-setup.sh
+sudo ./nodejs-setup.sh
